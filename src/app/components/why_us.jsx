@@ -33,7 +33,7 @@ export const WhyUs = () => {
                     opacity : 1,
                     transition : {duration : 1}
                 }}
-                className='w-[340px] h-[340px] max-sm:min-h-[300px] why-us-container relative p-0  '>
+                className='w-[340px] h-[250px] max-sm:min-h-[300px] why-us-container relative p-0  '>
                     <div className=" bg-white h-full rounded-lg p-4  absolute">
                         <h3 className='text-lg font-semibold text-blackColor'>{t('why_us_1')}</h3>
                         <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_1_desc')}
@@ -54,7 +54,7 @@ export const WhyUs = () => {
                     opacity : 1,
                     transition : {duration : 1}
                 }}
-                className='w-[340px] min-h-[340px] max-sm:min-h-[300px] why-us-container relative   '>
+                className='w-[340px] min-h-[250px] max-sm:min-h-[300px] why-us-container relative   '>
                     <div className=" bg-white h-full rounded-lg p-4  absolute">
                         <h3 className='text-lg font-semibold text-blackColor'>{t('why_us_2')}</h3>
                         <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_2_desc')}
@@ -75,10 +75,78 @@ export const WhyUs = () => {
                     opacity : 1,
                     transition : {duration : 1}
                 }}
-                className='w-[340px] h-[340px] max-sm:min-h-[300px] why-us-container relative   '>
+                className='w-[340px] h-[250px] max-sm:min-h-[300px] why-us-container relative   '>
                     <div className=" bg-white h-full rounded-lg p-4  absolute">
                         <h3 className='text-lg font-semibold text-blackColor'>{t('why_us_3')}</h3>
                         <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_3_desc')}
+                        </p>
+                    </div>
+                </motion.div>
+                
+            </div>
+
+            
+            <div className='flex flex-row flex-wrap  justify-center gap-16 py-12 max-sm:px-0 max-lg:hidden'>
+            <motion.div
+                initial = {{
+                    x : 0,
+                    y : 0,
+                    scale : 0.8,
+                    opacity : 0,
+                }}
+                whileInView = {{
+                    x : 0,
+                    y : 0,
+                    scale : 1,
+                    opacity : 1,
+                    transition : {duration : 1}
+                }}
+                className='w-[340px] h-[250px] max-sm:min-h-[300px] why-us-container relative p-0  '>
+                    <div className=" bg-white h-full rounded-lg p-4  absolute">
+                        <h3 className='text-lg font-semibold text-blackColor'>{t('why_us_4')}</h3>
+                        <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_4_desc')}
+                        </p>
+                    </div>
+                </motion.div>
+                <motion.div
+                initial = {{
+                    x : 0,
+                    y : 0,
+                    scale : 0.8,
+                    opacity : 0,
+                }}
+                whileInView = {{
+                    x : 0,
+                    y : 0,
+                    scale : 1,
+                    opacity : 1,
+                    transition : {duration : 1}
+                }}
+                className='w-[340px] min-h-[250px] max-sm:min-h-[300px] why-us-container relative   '>
+                    <div className=" bg-white h-full rounded-lg p-4  absolute">
+                        <h3 className='text-lg font-semibold text-blackColor'>{t('why_us_5')}</h3>
+                        <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_5_desc')}
+                        </p>
+                    </div>
+                </motion.div>
+                <motion.div
+                initial = {{
+                    x : 0,
+                    y : 0,
+                    scale : 0.8,
+                    opacity : 0,
+                }}
+                whileInView = {{
+                    x : 0,
+                    y : 0,
+                    scale : 1,
+                    opacity : 1,
+                    transition : {duration : 1}
+                }}
+                className='w-[340px] h-[250px] max-sm:min-h-[300px] why-us-container relative   '>
+                    <div className=" bg-white h-full rounded-lg p-4  absolute">
+                        <h3 className='text-lg font-semibold text-blackColor'>{t('why_us_6')}</h3>
+                        <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_6_desc')}
                         </p>
                     </div>
                 </motion.div>

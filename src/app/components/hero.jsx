@@ -8,7 +8,12 @@ import { motion, useAnimation } from 'framer-motion';
 export const Hero = () => {
     const {t, i18n} = useTranslation();
     return (
-        <section id='hero' className='overflow-hidden max-w-screen px-28 max-lg:p-28 max-md:px-20 max-sm:px-8 flex flex-row max-lg:flex-col max-lg:gap-16 max-sm:gap-0  align-center justify-between max-lg:justify-center items-center min-h-[calc(100vh-0px)] max-sm:min-h-screen   '>
+        <section 
+        id='hero'       
+        style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/un.jpg')`,
+          }} className='overflow-hidden bg-center bg-repeat-x bg-cover relative max-w-screen px-28 max-lg:p-28 max-md:px-20 max-sm:px-8 flex flex-row max-lg:flex-col max-lg:gap-16 max-sm:gap-0  align-center justify-between max-lg:justify-center items-center min-h-[calc(100vh-0px)] max-sm:min-h-screen   '>
+           
             <div className='w-1/2 max-lg:w-full max-lg:text-center max-lg:items-center flex flex-col gap-5 '>
                 <motion.h3
                 initial = {{
@@ -22,7 +27,7 @@ export const Hero = () => {
                     opacity : 1,
                     transition : {duration : 1}
                 }}
-                 className='text-blackColor text-4xl max-lg:text-5xl max-md:text-3xl max-sm:text-2xl font-black  bg-clip-text text-transparent bg-gradient-to-r from-blackColor  to-secondBlackColor'>{t('hero_title')}</motion.h3>
+                 className='text-blackColor text-4xl max-lg:text-5xl max-md:text-3xl max-sm:text-2xl font-black  bg-clip-text text-transparent bg-gradient-to-r from-mainGreen  to-secondGreen'>{t('hero_title')}</motion.h3>
                 <motion.p
                 initial = {{
                     x : -0,
@@ -35,7 +40,7 @@ export const Hero = () => {
                     opacity : 1,
                     transition : {delay : 0.2, duration: 1}
                 }}
-                 className='text-blackColor text-lg max-lg:text-xl max-md:text-lg max-sm:text-sm font-medium'>{t('hero_desc')}</motion.p>
+                 className='text-white text-lg max-lg:text-xl max-md:text-lg max-sm:text-sm font-medium'>{t('hero_desc')}</motion.p>
                 <motion.a
                 initial = {{
                     x : -0,
@@ -48,7 +53,7 @@ export const Hero = () => {
                     opacity : 1,
                     transition : {delay : 0.3, duration: 1}
                 }}
-                 href="#contact" className='px-4 py-3 flex flex-row align-center justify-center items-center gap-2 text-white w-fit bg-gradient-to-r from-blackColor   to-secondBlackColor rounded-lg shadow-lg shadow-shadow'>
+                 href="#contact" className='px-4 py-3 flex flex-row align-center justify-center items-center gap-2 text-white w-fit bg-gradient-to-r from-mainGreen   to-secondGreen rounded-lg shadow-lg shadow-shadow'>
                     <span className='text-sm'>{t('hero_button')}</span>
                     {i18n.language == "ar" ? 
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +66,7 @@ export const Hero = () => {
                     }
                 </motion.a>
             </div>
-            <motion.div
+            {/* <motion.div
             initial = {{
                 x : 0,
                 y : 0,
@@ -75,10 +80,10 @@ export const Hero = () => {
                 opacity : 1,
                 transition : {duration: 1}
             }}
-             className=' w-[350px]   relative  flex justify-center align-center items-center h-[350px] max-lg:h-[350px]'>
+             className=' w-[350px]   relative  flex justify-center align-center items-center h-[350px] max-lg:h-[350px]'> */}
                 {/* <div className='w-[90%] h-[50%] bg-blurGreen  absolute bottom-20 rounded-full blur-[0px]'></div>
                 <div className='w-[50%] h-[50%] bg-blurBlue absolute right-0 rounded-full blur-[0px]'></div> */}
-                <img src="lynaat_shadow_logo.png"  alt="" className='w-[250px] max-md:w-[150px]' />
+                {/* <img src="lynaat_shadow_logo.png"  alt="" className='w-[250px] max-md:w-[150px]' />
                 <motion.p
                 animate={{
                     scale: [0.9, 1, 0.9], 
@@ -127,7 +132,7 @@ export const Hero = () => {
                     ease: "easeInOut", 
                 }}
                 className='w-36 py-2 max-md:w-24 text-center max-md:text-xs shadow-lg shadow-shadow right-0 top-32 max-md:top-36 max-md:right-16 bg-blackColor rounded-lg absolute font-medium text-white'>{t('performance')}</motion.p>
-            </motion.div>
+            </motion.div> */}
         </section>
     )
 }

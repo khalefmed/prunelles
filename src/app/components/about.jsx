@@ -14,8 +14,8 @@ export const About = () => {
             : 
             <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('about')}</h1>
             }
-            <div className='flex flex-row max-lg:flex-col gap-28 max-xl:gap-4 items-center  max-lg:items-start '>
-                <motion.div 
+            <div className='flex flex-col max-lg:flex-col gap-16 max-xl:gap-2 items-center  max-lg:items-start '>
+                {/* <motion.div 
                 initial = {{
                     x : -100,
                     y : 0,
@@ -31,8 +31,9 @@ export const About = () => {
                 }}
                 className={'w-2/3 max-lg:w-full text-blackColor font-medium text-md  leading-[30px] border-mainGreen px-4 h-fit '+ (i18n.language == "ar" ? "border-r-[3px]": "border-l-[3px]")}>
                 {t('about_desc')}
-                </motion.div>
-                <div className='flex flex-col  max-sm:w-full gap-3 items-center justify-center '>
+                </motion.div> */}
+                <img src='/un.jpg' className='h-[400px] rounded-xl'  alt="" />
+                <div className='flex flex-row   max-sm:w-full gap-3 items-start justify-center '>
                     <motion.div 
                     initial = {{
                         x : 100,
@@ -45,11 +46,11 @@ export const About = () => {
                         opacity : 1,
                         transition : {duration : 1}
                     }}
-                    className='flex flex-row items-center gap-3 w-full px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
-                        <img src='/mission_icon.png' width={40} height={40} alt="" />
-                        <div className='flex flex-col'>
-                            <h4 className='font-semibold text-blackColor text-md'>{t('mission')}</h4>
-                            <p className='text-blackColor font-normal text-xs'>{t('mission_desc')}</p>
+                    className='flex flex-row items-center gap-3 w-full h-[260px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                        {/* <img src='/mission_icon.png' width={40} height={40} alt="" /> */}
+                        <div className='flex flex-col gap-2'>
+                            <h4 className='font-semibold text-mainGreen text-lg'>{t('present')}</h4>
+                            <p className='text-blackColor font-medium text-sm'>{t('present_desc')}</p>
                         </div>
                     </motion.div>
                     <motion.div 
@@ -64,11 +65,11 @@ export const About = () => {
                         opacity : 1,
                         transition : {duration : 1}
                     }}
-                    className='flex flex-row items-center gap-3 w-full px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
-                        <img src='/vision_icon.png' width={40} height={40} alt="" />
-                        <div className='flex flex-col'>
-                            <h4 className='font-semibold text-blackColor text-md'>{t('vision')}</h4>
-                            <p className='text-blackColor font-normal text-xs'>{t('vision_desc')}</p>
+                    className='flex flex-row items-center gap-3 w-full h-[260px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                        {/* <img src='/mission_icon.png' width={40} height={40} alt="" /> */}
+                        <div className='flex flex-col gap-2'>
+                            <h4 className='font-semibold text-mainGreen text-lg'>{t('mission')}</h4>
+                            <p className='text-blackColor font-medium text-sm'>{t('mission_desc')}</p>
                         </div>
                     </motion.div>
                     <motion.div 
@@ -83,11 +84,30 @@ export const About = () => {
                         opacity : 1,
                         transition : {duration : 1}
                     }}
-                    className='flex flex-row items-center gap-3 w-full px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
-                        <img src='/commitment_icon.png' width={40} height={40} alt="" />
-                        <div className='flex flex-col'>
-                            <h4 className='font-semibold text-blackColor text-md'>{t('commitment')}</h4>
-                            <p className='text-blackColor font-normal text-xs'>{t('commitment_desc')}</p>
+                    className='flex flex-row items-center gap-3 w-full h-[260px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                        {/* <img src='/vision_icon.png' width={40} height={40} alt="" /> */}
+                        <div className='flex flex-col gap-2'>
+                            <h4 className='font-semibold text-mainGreen text-lg'>{t('vision')}</h4>
+                            <p className='text-blackColor font-medium text-sm'>{t('vision_desc')}</p>
+                        </div>
+                    </motion.div>
+                    <motion.div 
+                    initial = {{
+                        x : 100,
+                        y : 0,
+                        opacity : 0,
+                    }}
+                    whileInView = {{
+                        x : 0,
+                        y : 0,
+                        opacity : 1,
+                        transition : {duration : 1}
+                    }}
+                    className='flex flex-row items-center gap-3 w-full h-[260px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                        {/* <img src='/commitment_icon.png' width={40} height={40} alt="" /> */}
+                        <div className='flex flex-col gap-2'>
+                            <h4 className='font-semibold text-mainGreen text-lg'>{t('commitment')}</h4>
+                            <p className='text-blackColor font-medium text-sm'>{t('commitment_desc')}</p>
                         </div>
                     </motion.div>
 

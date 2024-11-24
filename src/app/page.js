@@ -10,6 +10,8 @@ import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import { Services } from "./components/services";
 import { WhyUs } from "./components/why_us";
+import { Mot } from "./components/mot";
+import { Galerie } from "./components/galerie";
 
 export default function Home() {
   const {i18n} = useTranslation();
@@ -35,6 +37,8 @@ export default function Home() {
         <About/>
         <Services/>
         <WhyUs/>
+        <Galerie/>
+        <Mot/>
         <Contact/>
         <Footer/>
       </main>

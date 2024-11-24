@@ -8,7 +8,7 @@ const roboto = Tajawal({
 })
 
 export const metadata = {
-  title: "Lynaat",
+  title: "Prunelles",
   description: "",
 };
 

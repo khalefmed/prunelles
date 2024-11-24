@@ -9,7 +9,8 @@ export const Footer = () => {
     return (
         <footer className='flex flex-row max-sm:flex-col max-sm:justify-start max-sm:gap-16 justify-between bg-blackColor px-28 py-8 max-sm:px-8'>
             <div className='flex flex-col gap-8'>
-                <img src="lynaat_logo_white.png" height={10} width={150} alt="" />
+                {/* <img src="lynaat_logo_white.png" height={10} width={150} alt="" /> */}
+                <h1 className='text-white font-extrabold text-2xl '>Prunelles</h1>
                 <div className='flex flex-col justify-start gap-3'>
                     <div className='flex flex-row items-center gap-2 text-cardGrey'>
                         <img src="email_icon.png" width={20} alt="" />
