@@ -154,7 +154,7 @@ export const WhyUs = () => {
             </div>
 
 
-            <div className={'flex flex-row flex-wrap  justify-center gap-16 py-0 max-sm:px-4   lg:hidden ' + (i18n.language === "ar" ? "border-r-2 border-mainGreen" : "border-l-2 border-mainGreen")}>
+            <div className={'flex flex-row flex-wrap  justify-center gap-8 py-0 max-sm:px-4   lg:hidden ' + (i18n.language === "ar" ? "border-r-2 border-mainGreen" : "border-l-2 border-mainGreen")}>
             <motion.div
                 initial = {{
                     x : i18n.language == "ar" ? -100 : 100,

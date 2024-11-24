@@ -41,14 +41,14 @@ export const Services = () => {
     }
 
     return (
-        <section id='services' className='overflow-hidden max-w-screen p-28 flex flex-col gap-16 max-lg:p-16 max-sm:px-0 max-sm:8'>
+        <section id='services' className='overflow-hidden max-w-screen p-28 flex flex-col gap-8 max-lg:p-16 max-sm:px-0 max-sm:8'>
             { i18n.language == "ar" 
             ? 
             <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl  uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('services')}</h1>
             : 
             <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('services')}</h1>
             }
-            <div className='flex flex-row max-md:flex-col flex-wrap gap-16  items-center max-sm:items-center justify-center  w-full '>
+            <div className='flex flex-row max-md:flex-col flex-wrap max-md:gap-8 gap-16  items-center max-sm:items-center justify-center  w-full '>
 
                 {/* Service Card */}
                 <motion.div

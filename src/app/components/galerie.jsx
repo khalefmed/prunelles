@@ -17,7 +17,7 @@ export const Galerie = () => {
             : 
             <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('galerie')}</h1>
             }
-            <div className='flex  justify-center align-center items-center w-1/2 max-md:w-full rounded-xl px-12'>
+            <div className='flex  justify-center align-center items-center w-full lg:w-2/3 max-md:w-full rounded-xl px-12'>
                 <ImageSwiper/>
             </div>
             

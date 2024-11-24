@@ -32,7 +32,7 @@ export const About = () => {
                 className={'w-2/3 max-lg:w-full text-blackColor font-medium text-md  leading-[30px] border-mainGreen px-4 h-fit '+ (i18n.language == "ar" ? "border-r-[3px]": "border-l-[3px]")}>
                 {t('about_desc')}
                 </motion.div> */}
-                <img src='/un.jpg' className='h-[400px] rounded-xl'  alt="" />
+                <img src='/un.jpg' className='w-1/2 max-md:w-full rounded-xl'  alt="" />
                 <div className='flex flex-row  max-md:flex-col  max-sm:w-full gap-3 max-md:gap-6 items-start justify-center '>
                     <motion.div 
                     initial = {{
@@ -46,7 +46,7 @@ export const About = () => {
                         opacity : 1,
                         transition : {duration : 1}
                     }}
-                    className='flex flex-row items-start gap-3 w-full  max-md:flex-col h-[260px] max-md:h-[200px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                    className='flex flex-row items-start gap-3 w-full  max-md:flex-col h-[260px] max-md:h-fit px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
                         {/* <img src='/mission_icon.png' width={40} height={40} alt="" /> */}
                         <div className='flex flex-col gap-2'>
                             <h4 className='font-semibold text-mainGreen text-lg'>{t('present')}</h4>
@@ -65,7 +65,7 @@ export const About = () => {
                         opacity : 1,
                         transition : {duration : 1}
                     }}
-                    className='flex flex-row items-start gap-3 w-full h-[260px] max-md:h-[200px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                    className='flex flex-row items-start gap-3 w-full h-[260px] max-md:h-fit px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
                         {/* <img src='/mission_icon.png' width={40} height={40} alt="" /> */}
                         <div className='flex flex-col gap-2'>
                             <h4 className='font-semibold text-mainGreen text-lg'>{t('mission')}</h4>
@@ -84,7 +84,7 @@ export const About = () => {
                         opacity : 1,
                         transition : {duration : 1}
                     }}
-                    className='flex flex-row items-start gap-3 w-full h-[260px] max-md:h-[200px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                    className='flex flex-row items-start gap-3 w-full h-[260px] max-md:h-fit px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
                         {/* <img src='/vision_icon.png' width={40} height={40} alt="" /> */}
                         <div className='flex flex-col gap-2'>
                             <h4 className='font-semibold text-mainGreen text-lg'>{t('vision')}</h4>
@@ -103,7 +103,7 @@ export const About = () => {
                         opacity : 1,
                         transition : {duration : 1}
                     }}
-                    className='flex flex-row items-start gap-3 w-full h-[260px] max-md:h-[200px] px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
+                    className='flex flex-row items-start gap-3 w-full h-[260px] max-md:h-fit px-4 py-3 shadow-whiteShadow shadow-lg rounded-lg'>
                         {/* <img src='/commitment_icon.png' width={40} height={40} alt="" /> */}
                         <div className='flex flex-col gap-2'>
                             <h4 className='font-semibold text-mainGreen text-lg'>{t('commitment')}</h4>

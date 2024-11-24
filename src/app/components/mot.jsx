@@ -14,7 +14,7 @@ export const Mot = () => {
             ? 
             <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl  uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('mot')}</h1>
             : 
-            <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('mot')}</h1>
+            <h1 className='text-center px-6 max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('mot')}</h1>
             }
             <div className=' px-12'>
             <p className='text-blackColor font-medium '>En créant l’école Les Prunelles, ma vision était claire : offrir un lieu où chaque enfant puisse grandir en harmonie, développer ses talents uniques, et s’épanouir dans un cadre qui allie exigence éducative et bienveillance.
