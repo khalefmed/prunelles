@@ -49,7 +49,7 @@ export default function DropDown() {
           <MenuItem>
             <button className="group flex w-full items-center gap-2 text-blackColor font-semibold rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
              
-            <DropDownLang/>
+            {/* <DropDownLang/> */}
             </button>
           </MenuItem>
         </MenuItems>

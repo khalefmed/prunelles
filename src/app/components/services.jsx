@@ -48,7 +48,7 @@ export const Services = () => {
             : 
             <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('services')}</h1>
             }
-            <div className='flex flex-row max-md:flex-col flex-wrap gap-16  items-start max-sm:items-center justify-center  w-full '>
+            <div className='flex flex-row max-md:flex-col flex-wrap gap-16  items-center max-sm:items-center justify-center  w-full '>
 
                 {/* Service Card */}
                 <motion.div

@@ -18,6 +18,7 @@ export const Header = () => {
                     <li className="font-semibold text-sm cursor-pointer"><Link href="#hero">{t('home')}</Link></li>
                     <li className="font-semibold text-sm cursor-pointer"><Link href="#about">{t('about')}</Link></li>
                     <li className="font-semibold text-sm cursor-pointer"><Link href="#services">{t('services')}</Link></li>
+                    <li className="font-semibold text-sm cursor-pointer"><Link href="#galerie">Galerie</Link></li>
                     <li className="font-semibold text-sm cursor-pointer"><Link href="#contact">{t('contact')}</Link></li>
                     {/* <li className="font-semibold text-sm cursor-pointer"><DropDownLang /></li> */}
                 </ul>

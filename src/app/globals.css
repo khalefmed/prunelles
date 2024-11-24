@@ -71,6 +71,39 @@ html :nth-child(0):not(main) {
   background-repeat: no-repeat;
 }
 
+.swiper-pagination {
+  bottom: 20px; /* Positionne la pagination */
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 1) !important; /* Couleur des bullets par défaut */
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  transition: background-color 0.3s ease; /* Animation pour les couleurs */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #D54400 !important; /* Couleur du bullet actif */
+}
+
+/* Personnalisation des flèches de navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important; /* Couleur des flèches */
+  font-size: 40px !important; /* Taille des flèches */
+  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour les flèches */
+  border-radius: 50% !important; /* Forme arrondie des boutons */
+  padding: 30px; /* Padding autour des flèches */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #D54400; /* Couleur du fond lors du survol des flèches */
+  color: white; /* Couleur des flèches lors du survol */
+}
+
 .why-us-container div {
   z-index : 10;
 }

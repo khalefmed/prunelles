@@ -218,6 +218,69 @@ export const WhyUs = () => {
                         </p>
                     </div>
                 </motion.div>
+                <motion.div
+                initial = {{
+                    x : i18n.language == "ar" ? -100 : 100,
+                    y : 0,
+                    scale : 1,
+                    opacity : 0,
+                }}
+                whileInView = {{
+                    x : 0,
+                    y : 0,
+                    scale : 1,
+                    opacity : 1,
+                    transition : {duration : 1}
+                }}
+                className='w-full'>
+                    <div className=" bg-white h-full rounded-lg p-4 ">
+                        <h3 className='text-lg font-semibold text-blackColor mb-2'>{t('why_us_4')}</h3>
+                        <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_4_desc')}
+                        </p>
+                    </div>
+                </motion.div>
+                <motion.div
+                initial = {{
+                    x : i18n.language == "ar" ? -100 : 100,
+                    y : 0,
+                    scale : 1,
+                    opacity : 0,
+                }}
+                whileInView = {{
+                    x : 0,
+                    y : 0,
+                    scale : 1,
+                    opacity : 1,
+                    transition : {duration : 1}
+                }}
+                className='w-full'>
+                    <div className=" bg-white h-full rounded-lg p-4 ">
+                        <h3 className='text-lg font-semibold text-blackColor mb-2'>{t('why_us_5')}</h3>
+                        <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_5_desc')}
+                        </p>
+                    </div>
+                </motion.div>
+                <motion.div
+                initial = {{
+                    x : i18n.language == "ar" ? -100 : 100,
+                    y : 0,
+                    scale : 1,
+                    opacity : 0,
+                }}
+                whileInView = {{
+                    x : 0,
+                    y : 0,
+                    scale : 1,
+                    opacity : 1,
+                    transition : {duration : 1}
+                }}
+                className='w-full'>
+                    <div className=" bg-white h-full rounded-lg p-4 ">
+                        <h3 className='text-lg font-semibold text-blackColor mb-2'>{t('why_us_6')}</h3>
+                        <p className='text-sm font-medium text-blackColor leading-[25px]'>{t('why_us_6_desc')}
+                        </p>
+                    </div>
+                </motion.div>
                 
             </div>
         </section>
