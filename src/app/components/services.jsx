@@ -11,24 +11,15 @@ export const Services = () => {
     const [secState, setSecState] = useState(false);
     const [devState, setDevState] = useState(false);
     const [aiState, setAiState] = useState(false);
-    const [acState, setAcState] = useState(false);
-    const [apState, setApState] = useState(false);
-    const [soState, setSoState] = useState(false);
     
     const [secContent, setSecContent] = useState('');
     const [devContent, setDevContent] = useState('');
     const [aiContent, setAiContent] = useState('');
-    const [acContent, setAcContent] = useState('');
-    const [apContent, setApContent] = useState('');
-    const [soContent, setSoContent] = useState('');
 
     useEffect(() => {
         setSecContent(t('cybersecurity_desc'));
         setDevContent(t('development_desc'));
         setAiContent(t('ai_bi_desc'));
-        setAcContent(t('accompagnement_desc'));
-        setApContent(t('approche_desc'));
-        setSoContent(t('solidarite_desc'));
         
     }, [t])
     
@@ -41,14 +32,14 @@ export const Services = () => {
     }
 
     return (
-        <section id='services' className='overflow-hidden max-w-screen p-28 flex flex-col gap-8 max-lg:p-16 max-sm:px-0 max-sm:8'>
+        <section id='services' className='overflow-hidden max-w-screen p-28 flex flex-col gap-16 max-lg:p-16 max-sm:px-0 max-sm:8'>
             { i18n.language == "ar" 
             ? 
-            <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl  uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('services')}</h1>
+            <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl  uppercase bg-gradient-to-r from-main to-second'>{t('services')}</h1>
             : 
-            <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-mainGreen to-secondGreen'>{t('services')}</h1>
+            <h1 className='text-center max-md:text-3xl text-transparent bg-clip-text font-bold  text-4xl tracking-[0.25rem] uppercase bg-gradient-to-r from-main to-second'>{t('services')}</h1>
             }
-            <div className='flex flex-row max-md:flex-col flex-wrap max-md:gap-8 gap-16  items-center max-sm:items-center justify-center  w-full '>
+            <div className='flex flex-row max-md:flex-col flex-wrap gap-16  items-start max-sm:items-center justify-center  w-full '>
 
                 {/* Service Card */}
                 <motion.div
@@ -129,90 +120,6 @@ export const Services = () => {
                     <div className='w-full absolute z-20 flex justify-center max-sm:hidden '>
                         <button onClick={() => setAiState(!aiState)}>
                             <img src="arrow_down.png" className={aiState ? 'rotate-180' : ''}   height={30} width={30} alt="" />
-                        </button>
-                    </div>
-                </motion.div>
-
-
-                {/* Service Card */}
-                <motion.div
-                initial = {{
-                    x : -100,
-                    y : 0,
-                    opacity : 0,
-                }}
-                whileInView = {{
-                    x : 0,
-                    y : 0,
-                    opacity : 1,
-                    transition : {duration : 1}
-                }}
-                 className=' w-[300px] relative'>
-                    {(!secState) && <div className='w-full h-full  z-0 absolute bg-gradient-to-b from-transparent to-white max-sm:hidden'></div> }
-                    <div className=' md:bg-cardGrey rounded-lg p-4  flex flex-col gap-2'>
-                        <h4 className='text-blackColor font-semibold text-md'>{t('accompagnement')}</h4>
-                        <p className='text-sm  transition-all duration-500 max-sm:hidden text-blackColor'> {acState ? acContent : acContent.slice(0, 200) } </p>
-                        <p className='text-sm  transition-all duration-500 sm:hidden text-blackColor'> {acContent } </p>
-                    </div>
-                    <div className='w-full absolute z-20 flex justify-center max-sm:hidden'>
-                        <button onClick={() => setAcState(!acState)}>
-                            <img src="arrow_down.png" className={acState ? 'rotate-180' : ''}   height={30} width={30} alt="" />
-                        </button>
-                    </div>
-                </motion.div>
-
-                {/* Service Card */}
-                <motion.div
-                initial = {{
-                    x : 0,
-                    y : 0,
-                    scale : 0.8,
-                    opacity : 0,
-                }}
-                whileInView = {{
-                    x : 0,
-                    y : 0,
-                    scale : 1,
-                    opacity : 1,
-                    transition : {duration : 1}
-                }}
-                className=' w-[300px] relative'>
-                    {(!devState) && <div className='w-full h-full  z-0 absolute bg-gradient-to-b from-transparent to-white max-sm:hidden'></div> }
-                    <div className=' md:bg-cardGrey rounded-lg p-4  flex flex-col gap-2'>
-                        <h4 className='text-blackColor font-semibold text-md'>{t('approche')}</h4>
-                        <p className='text-sm  transition-all duration-500 max-sm:hidden text-blackColor'> {apState ? apContent : apContent.slice(0, 200) } </p>
-                        <p className='text-sm  transition-all duration-500 sm:hidden text-blackColor'> {apContent} </p>
-                    </div>
-                    <div className='w-full absolute z-20 flex justify-center max-sm:hidden '>
-                        <button onClick={() => setApState(!apState)}>
-                            <img src="arrow_down.png" className={apState ? 'rotate-180' : ''}   height={30} width={30} alt="" />
-                        </button>
-                    </div>
-                </motion.div>
-
-                {/* Service Card */}
-                <motion.div
-                initial = {{
-                    x : 100,
-                    y : 0,
-                    opacity : 0,
-                }}
-                whileInView = {{
-                    x : 0,
-                    y : 0,
-                    opacity : 1,
-                    transition : {duration : 1}
-                }}
-                className=' w-[300px] relative'>
-                    {(!aiState) && <div className='w-full h-full  z-0 absolute bg-gradient-to-b from-transparent to-white max-sm:hidden'></div> }
-                    <div className=' md:bg-cardGrey rounded-lg p-4  flex flex-col gap-2'>
-                        <h4 className='text-blackColor font-semibold text-md'>{t('solidarite')}</h4>
-                        <p className='text-sm  transition-all duration-500 max-sm:hidden text-blackColor'> {soState ? soContent : soContent.slice(0, 200) } </p>
-                        <p className='text-sm  transition-all duration-500 sm:hidden text-blackColor'> {soContent } </p>
-                    </div>
-                    <div className='w-full absolute z-20 flex justify-center max-sm:hidden '>
-                        <button onClick={() => setSoState(!soState)}>
-                            <img src="arrow_down.png" className={soState ? 'rotate-180' : ''}   height={30} width={30} alt="" />
                         </button>
                     </div>
                 </motion.div>

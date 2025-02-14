@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
 
 /* * {
   font-family: "Tajawal", sans-serif !important;
@@ -60,50 +60,6 @@ html :nth-child(0):not(main) {
   }
 }
 
-#hero {
-  background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Overlay */
-    url('/un.jpg'); /* Image de fond */
-    
-  /* Autres propriétés de style */
-  background-size: cover; /* Ajuste l'image pour couvrir tout le conteneur */
-  background-position: center; /* Centre l'image */
-  background-repeat: no-repeat;
-}
-
-.swiper-pagination {
-  bottom: 20px; /* Positionne la pagination */
-  z-index: 10;
-}
-
-.swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 1) !important; /* Couleur des bullets par défaut */
-  width: 12px !important;
-  height: 12px !important;
-  border-radius: 50%;
-  transition: background-color 0.3s ease; /* Animation pour les couleurs */
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #D54400 !important; /* Couleur du bullet actif */
-}
-
-/* Personnalisation des flèches de navigation */
-.swiper-button-next,
-.swiper-button-prev {
-  color: white !important; /* Couleur des flèches */
-  font-size: 40px !important; /* Taille des flèches */
-  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour les flèches */
-  border-radius: 50% !important; /* Forme arrondie des boutons */
-  padding: 30px; /* Padding autour des flèches */
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #D54400; /* Couleur du fond lors du survol des flèches */
-  color: white; /* Couleur des flèches lors du survol */
-}
-
 .why-us-container div {
   z-index : 10;
 }
@@ -115,7 +71,7 @@ html :nth-child(0):not(main) {
 
 .why-us-container::before {
   content: '';
-  background : linear-gradient(to right, #DD6E39, #D54400);
+  background : linear-gradient(to right, #00D296, #00EAEA);;
   position : absolute;
   border-radius : .75rem;
   width : 100px;
@@ -127,7 +83,7 @@ html :nth-child(0):not(main) {
 
 .why-us-container::after {
   content: '';
-  background : linear-gradient(to right, #DD6E39, #D54400);;
+  background : linear-gradient(to right, #00D296, #00EAEA);;
   position : absolute;
   border-radius : .75rem;
   width : 100px;
